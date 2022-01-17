@@ -12,7 +12,7 @@
     "start:example": "node -r ts-node/register ./examples/run_example.ts",
     "precommit": "lint-staged",
     "prepublish": "yarn run build",
-    "public-public": "yarn publish --access public",
+    "publish-public": "yarn publish --access public",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
