@@ -1,0 +1,61 @@
+{
+  "name": "@authok/nestjs-openid-connect",
+  "version": "1.0.0",
+  "description": "NestJS openid module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/authok/nestjs-openid-connect"
+  },
+  "scripts": {
+    "build": "rimraf dist && tsc -p tsconfig.json",
+    "start:example": "node -r ts-node/register ./examples/run_example.ts",
+    "precommit": "lint-staged",
+    "prepublish": "yarn run build",
+    "public-public": "yarn publish --access public",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
+    "test:e2e": "jest --config ./test/jest-e2e.json",
+    "lint": "eslint -c .eslintrc.js"
+  },
+  "dependencies": {
+    "@authok/express-openid-connect": "^2.5.2",
+    "@nestjs/common": "^8.2.5",
+    "@nestjs/core": "^8.2.5"
+  },
+  "devDependencies": {
+    "nestjs-redis": "git+https://github.com/GyanendroKh/nestjs-redis.git#nest8-fix",
+    "@nestjs/platform-express": "^8.2.5",
+    "@nestjs/testing": "^8.2.5",
+    "@types/node": "^17.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.9.1",
+    "@typescript-eslint/parser": "^5.9.1",
+    "connect-redis": "^6.0.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "dotenv": "^14.1.0",
+    "eslint": "^8.7.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jest": "^25.7.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "express": "^4.17.2",
+    "express-oauth2-bearer": "^0.4.1",
+    "jest": "^27.4.7",
+    "oidc-provider": "^7.10.6",
+    "prettier": "^2.5.1",
+    "reflect-metadata": "^0.1.13",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^27.1.3",
+    "typescript": "^4.5.4"
+  },
+  "keywords": [
+    "nestjs",
+    "authok",
+    "oidc"
+  ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
