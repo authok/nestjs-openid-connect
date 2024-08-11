@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.setupOidcAuth = void 0;
+exports.setupOidcAuth = setupOidcAuth;
 function setupOidcAuth(app) {
     const middleware = app.get('AUTH_MIDDLEWARE');
     const options = app.get('OIDC_AUTH_OPTIONS');
@@ -8,4 +8,3 @@ function setupOidcAuth(app) {
         ...options,
     }));
 }
-exports.setupOidcAuth = setupOidcAuth;

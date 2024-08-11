@@ -35,11 +35,11 @@ let AuthokOpenidConnectModule = AuthokOpenidConnectModule_1 = class AuthokOpenid
         };
     }
 };
-AuthokOpenidConnectModule = AuthokOpenidConnectModule_1 = __decorate([
+exports.AuthokOpenidConnectModule = AuthokOpenidConnectModule;
+exports.AuthokOpenidConnectModule = AuthokOpenidConnectModule = AuthokOpenidConnectModule_1 = __decorate([
     (0, common_1.Global)(),
     (0, common_1.Module)({
         providers: [oidc_request_context_provider_1.OidcRequestContextProvider, oidc_auth_middleware_provider_1.OIDCAuthMiddlewareProvider],
         exports: [oidc_request_context_provider_1.OidcRequestContextProvider, oidc_auth_middleware_provider_1.OIDCAuthMiddlewareProvider],
     })
 ], AuthokOpenidConnectModule);
-exports.AuthokOpenidConnectModule = AuthokOpenidConnectModule;

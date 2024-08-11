@@ -45,8 +45,8 @@ let ScopesGuard = class ScopesGuard {
         return true;
     }
 };
-ScopesGuard = __decorate([
+exports.ScopesGuard = ScopesGuard;
+exports.ScopesGuard = ScopesGuard = __decorate([
     (0, common_1.Injectable)(),
     __metadata("design:paramtypes", [core_1.Reflector])
 ], ScopesGuard);
-exports.ScopesGuard = ScopesGuard;

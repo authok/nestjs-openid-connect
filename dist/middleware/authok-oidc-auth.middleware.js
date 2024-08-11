@@ -25,10 +25,10 @@ let AuthokOidcAuthMiddleware = class AuthokOidcAuthMiddleware {
         })(req, res, next);
     }
 };
-AuthokOidcAuthMiddleware = __decorate([
+exports.AuthokOidcAuthMiddleware = AuthokOidcAuthMiddleware;
+exports.AuthokOidcAuthMiddleware = AuthokOidcAuthMiddleware = __decorate([
     (0, common_1.Injectable)(),
     __param(0, (0, common_1.Inject)('AUTH_MIDDLEWARE')),
     __param(1, (0, common_1.Inject)('OIDC_AUTH_OPTIONS')),
     __metadata("design:paramtypes", [Function, Object])
 ], AuthokOidcAuthMiddleware);
-exports.AuthokOidcAuthMiddleware = AuthokOidcAuthMiddleware;

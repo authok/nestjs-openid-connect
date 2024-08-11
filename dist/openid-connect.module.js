@@ -57,8 +57,8 @@ let OpenidConnectModule = OpenidConnectModule_1 = class OpenidConnectModule {
         };
     }
 };
-OpenidConnectModule = OpenidConnectModule_1 = __decorate([
+exports.OpenidConnectModule = OpenidConnectModule;
+exports.OpenidConnectModule = OpenidConnectModule = OpenidConnectModule_1 = __decorate([
     (0, common_1.Injectable)(),
     (0, common_1.Global)()
 ], OpenidConnectModule);
-exports.OpenidConnectModule = OpenidConnectModule;
